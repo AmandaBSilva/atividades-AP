@@ -1,3 +1,13 @@
+print("""
+Menu Principal
+  [1] Celsius para Kelvin
+  [2] Celsius para Fahrenheit
+  [3] Kelvin para Celsius
+  [4] Kelvin para Fahrenheit
+  [5] Fahrenheit para Celsius
+  [6] Fahrenheit para Kelvin
+  [0] SAIR
+""")
 opcao = input("Escolha uma das opções acima: ")
 if opcao == 0:
     return
