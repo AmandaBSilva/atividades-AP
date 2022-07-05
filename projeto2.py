@@ -8,19 +8,23 @@ Menu Principal
   [6] Fahrenheit para Kelvin
   [0] SAIR
 """)
+
 opcao = int(input("Escolha uma das opções acima: "))
+
 if opcao == 0:
     exit()
+
 temp = float(input("Digite o valor da temperatura em graus [Celsius | Kelvin | Fahrenheit]: "))
+
 if opcao == 1:
-    print(str(temp + 273.15) + "K°")
+    print(f"{temp + 273.15:.2f}K°")
 elif opcao == 2:
-    print(str(temp * 9/5 + 32) + "F°")
+    print(f"{temp * 9/5 + 32:.2f}F°")
 elif opcao == 3:
-    print(str(temp - 273.15) + "C°")
+    print(f"{temp - 273.15:.2f}C°")
 elif opcao == 4:
-    print(str(temp * 9/5 - 459.67) + "F°")
+    print(f"{temp * 9/5 - 459.67:.2f}F°")
 elif opcao == 5:
-    print(str((temp - 32)*5/9) + "C°")
+    print(f"{(temp - 32)*5/9:.2f}C°")
 elif opcao == 6:
-    print(str((temp + 459.67)*5/9) + "K°")
+    print(f"{(temp + 459.67)*5/9:.2f}K°")
