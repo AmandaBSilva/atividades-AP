@@ -31,7 +31,7 @@ Menu Principal
             print(f"{(temp - 32)*5/9:.2f}C°")
         elif opcao == 6:
             print(f"{(temp + 459.67)*5/9:.2f}K°")
-        
-        continuar = input("Deseja continuar?(S/N) ")
+        print("-"*50)
+        continuar = input("Deseja realizar outra conversão?(S/N) ")
         if continuar.lower() == "n":
             break
